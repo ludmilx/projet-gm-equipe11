@@ -3,11 +3,14 @@
 Ce projet a pour objectif de planifier les examens pour une promotion d'étudiants en fonction de différentes modalités et contraintes.
 
 ## Fonctionnalités
-
+- Inscription et connexion pour l'administrateur.
+- Gestion des promotions et de leurs filières ainsi que des salles disponibles pour la période d'examens.
 - Chargement des examens à partir de fichiers CSV.
 - Planification des examens communs et spécifiques.
-- Gestion des salles en fonction du nombre d'étudiants et des capacités des salles.
+- Allocatio, des salles en fonction du nombre d'étudiants et des capacités des salles.
 - Génération de fichiers de planning avec les horaires et les salles assignées.
+
+Ce projet respecte avant tout les **contraintes dures** *(non chevauchement des examens, une salle doit être occupée à moitié pour accueillir un examen, et les salles doivent être disponibles aux heures programmées pour éviter tout conflit de réservation)* ainsi que les **contraintes molles** *(minimisation des périodes d'attente; équilibrage de la charge de travail)* qui constituent le **cahier des charges** établit par un établissement scolaire et qui a été défini lors du rendu 1 du projet.
 
 ## Structure du Projet
 
@@ -23,7 +26,7 @@ Le projet est composé des fichiers suivants :
 
 ### Prérequis
 
-- Un compilateur C (par exemple, `gcc`).
+- Un compilateur C.
 - Les fichiers source (`main.c`, `admin.c`, `examens.c`, `modalites.c`).
 - Le fichier CSV `ING1.csv` contenant les informations des étudiants.
 
