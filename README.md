@@ -29,6 +29,19 @@ Le projet est composé des fichiers suivants :
 - Un compilateur C.
 - Les fichiers source (`main.c`, `admin.c`, `examens.c`, `modalites.c`).
 - Le fichier CSV `ING1.csv` contenant les informations des étudiants.
+- La bibliothèque OpenSSL pour le hachage des mots de passe. Vous pouvez l'installer sur votre système avec la commande suivante :
+
+    **Pour Ubuntu/Debian :**
+
+    ```sh
+    sudo apt-get install libssl-dev
+    ```
+
+    **Pour macOS avec Homebrew :**
+
+    ```sh
+    brew install openssl
+    ```
 
 ### Compilation
 
@@ -37,6 +50,7 @@ Pour compiler le projet, exécutez la commande suivante :
 ```
 make
 ```
+:warning: La compilation ne fonctionnera pas si la bibliothèque OpenSSL n'est pas préalablement installée !
 
 #### Exécution
 
